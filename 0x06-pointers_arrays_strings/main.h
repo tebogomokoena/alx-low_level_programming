@@ -9,85 +9,85 @@
 int _putchar(char c);
 
 /**
- * _isupper - checks for uppercase character
- * @c: character to be checked
- * Return: 1 if true, 0 if false
+ * _strcat - concatenate two strings
+ * @dest: string to be appended to
+ * @src: string to append
+ * Return: concatenated string
  */
 
-int _isupper(int c);
+char *_strcat(char *dest, char *src);
 
 /**
- * _isdigit - checks for a digit 0 through 9
- * @c: digit to be checked
- * Return: 1 if true, 0 if false
+ * _strcat - concatenate n bytes to destination string
+ * @dest: string to be appended to
+ * @src: string to append
+ * @n: append n number of bytes(chars)
+ * Return: concatenated string
  */
 
-int _isdigit(int c);
+char *_strncat(char *dest, char *src, int n);
 
 /**
- * mul - multiplies two integers
- * @a: one integer
- * @b: second integer
- * Return: product of a and b
+ * _strncpy - copies n bytes of a source into buffer of a destination string,
+ * @dest: copy source to this buffer
+ * @src: this is the source to copy
+ * @n: n bytes to be copied
+ * Return: copied string
  */
 
-int mul(int a, int b);
+char *_strncpy(char *dest, char *src, int n);
 
 /**
- * print_numbers - print 0 to 9
+ * _strcmp - compare two strings
+ * @s1: one string
+ * @s2: one string
+ * Return: int that tells num spaces in between
  */
 
-void print_numbers(void);
+int _strcmp(char *s1, char *s2);
 
 /**
- * print_most_numbers - print 0 to 9, skip 2 and 4
+ * reverse_array - reverse array elements
+ * @a: array
+ * @n: number of elements in array
  */
 
-void print_most_numbers(void);
+void reverse_array(int *a, int n);
 
 /**
- * more_numbers - print 0 to 14 ten times
+ * string_toupper - capitalize all letters in string
+ * @s: string to manipulate
+ * Return: string with all letters capitalized
  */
 
-void more_numbers(void);
+char *string_toupper(char *);
 
 /**
- * print_line(int n) - print the character "_" n times to draw a line
- * @n: number of characters to draw
+ * string_toupper - capitalize first letter of all words
+ * @s: string to manipulate
+ * Return: string
  */
 
-void print_line(int n);
+char *cap_string(char *s);
 
 /**
- * print_diagonal - print character "\" n times
- * @n: number of characters to draw
+ * rot13 - encode string using rot13
+ * @s: string to encode
+ * Return: encoded string
  */
 
-void print_diagonal(int n);
+char *rot13(char *s);
 
 /**
- * print_square - print a square of given size
- * @size: size to draw
+ * leet - encode string into 1337 leet
+ * @s: string to manipulate
+ * Return: string
  */
 
-void print_square(int size);
+char *leet(char *s);
 
 /**
- * print_triangle - print traingle with #'s with given size
- * @size: size of triangle to draw
- */
-
-void print_triangle(int size);
-
-/**
- * print_triangle - print traingle with #'s with given size
- * @size: size of triangle to draw
- */
-
-void print_triangle(int size);
-
-/**
- * print_number = print an integer, without using long, arrays, or pointers
+ * print_number - print an integer, without using long, arrays, or pointers
  * @n: number to be printed
  */
 
