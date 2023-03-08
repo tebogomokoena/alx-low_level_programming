@@ -8,87 +8,69 @@
 
 int _putchar(char c);
 
-
 /**
- * reset_to_98 - takes a pointer to an int as parameter and updates the value it points to to 98
- * @n: pointer to int n
+ * _puts_recursion - print string with new line
+ * @s: string to print
  */
 
-void reset_to_98(int *n);
+void _puts_recursion(char *s);
 
 /**
- * swap_int - swaps the values of two integers
- * @a: integer to swap
- * @b: integer to swap
+ * _print_rev_recursion - print string in reverse
+ * @s: string to print
  */
 
-void swap_int(int *a, int *b);
+void _print_rev_recursion(char *s);
 
 /**
- * main - returns the length of a string
+ * _strlen_recursion - return string length
  * @s: string
+ * Return: string length
  */
 
-int _strlen(char *s);
+int _strlen_recursion(char *s);
 
 /**
- * _puts - prints a string, followed by a new line, to stdout
- * @str: string to print
+ * factorial - find factorial of n
+ * @n: number
+ * Return: factorial of number, -1 if negative n
  */
 
-void _puts(char *str);
+int factorial(int n);
 
 /**
- * print_rev - prints a string, in reverse, followed by a new line
- * @s: string to reverse
+ * _pow_recursion - raise x to power y
+ * @x: number
+ * @y: power to raise to
+ * Return: power of a number, -1 if power less than 0
  */
 
-void print_rev(char *s);
+int _pow_recursion(int x, int y);
 
 /**
- * print_rev - reverses a string
- * @s: string to reverse
+ * _sqrt_recursion - find natural square root of n
+ * @n: n
+ * Return: natural square root, or -1 if not natural root
  */
 
-void rev_string(char *s);
+int _sqrt_recursion(int n);
 
 /**
- * puts2 - prints every second character of a string, followed by a new line
- * @str: string to print
+ * is_prime_number - check if prime
+ * @n: number to check
+ * Return: 1 if prime, 0 if not
  */
 
-void puts2(char *str);
+int is_prime_number(int n);
 
 /**
- * puts_half - prints half of a string, followed by a new line
- * @str: string to print
+ * is_palindrome - check if palindrome
+ * @s: string to check
+ * Return: 1 if palindrome, 0 if not
  */
 
-void puts_half(char *str);
+int is_palindrome(char *s);
 
-/**
- * print_array - prints n elements of an array of integers, followed by a new line
- * @a: array
- * @n: number of elements
- */
-
-void print_array(int *a, int n);
-
-/**
- * _strcpy - copies the string pointed to by src, including the terminating null byte (\0),
- * to the buffer pointed to by dest
- * @dest: copy source to this buffer
- * @src: this is the source to copy
- */
-
-char *_strcpy(char *dest, char *src);
-
-/**
- * _atoi - convert string to int
- * @s: string to convert
- * Return: integer
- */
-
-int _atoi(char *s);
+int wildcmp(char *s1, char *s2);
 
 #endif
